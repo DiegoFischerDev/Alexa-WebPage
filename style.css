@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+  --bg-dark: #03051D;
+  --light-blue: #12DFD3;
+  --blue: #346AD3;
+  --blue-hover: #2369f4;
+  --grey-hover: rgba(172, 164, 164, 0.635);
+  --white: #FFFFFF;
+
+  --menu-height: 52px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, h1, h2, h3, p {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body, button, input, select, textarea {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+h1 {
+  font-size: 44px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--light-blue);
+}
+
+a, p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  text-decoration: none;
+}
+
+span {
+  color: var(--light-blue);
+}
+
+.button {
+  background: var(--blue);
+  box-shadow: 0px 3px 10px #36397B;
+  border-radius: 100px;
+  padding: 12px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor:pointer;
+  transition: 0.4s;
+}
+
+.button:hover, .head .button:hover, .experimente .button:hover { 
+  background: var(--blue-hover);
+}
+
+.button-grey {
+  margin-left: 20px;
+  background: rgba(172, 164, 164, 0.4);
+  box-shadow: 0px 3px 10px #36397B;
+  border-radius: 100px;
+  padding: 12px 24px;
+  font-weight: 500;
+  font-size: 15px;
+  position: relative;
+  padding-left: 55px;
+  font-size: 18px;
+  border: none;
+  height: 52px;
+  margin: 0px 40px 40px 0;
+  font-size: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor:pointer;
+  transition: 0.4s;
+}
+
+.button-grey:hover { 
+  background: var(--grey-hover);
+}
+
+.button-grey img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 52px;
+}
+
+section {
+  padding: 0 30px 0 30px;
+}
+
+.menu {
+  position: sticky;
+  top: 0;
+  background: var(--bg-dark);
+  display: flex;
+  justify-content: space-between;
+  height: var(--menu-height);
+  align-items: center;
+  align-items: center;
+  z-index: 3;
+  box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.2);
+}
+
+.menu .menu-itens {
+  display: flex;
+  justify-content: space-between;
+  width: 60vw;
+  max-width: 900px;
+}
+
+.menu #logo {
+  height: 18px;
+  width: 100px;
+}
+
+.menu a {
+  font-size: 14px;
+}
+
+.head {
+  background-color: var(--bg-dark);
+  background-image: url("assets/bg5.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+
+  height: 900px;
+  padding-top: 10%;
+}
+
+.head .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.head .textarea {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.head .button {
+  height: 52px;
+  margin: 20px 40px 20px 0;
+  font-size: 27px;
+  background: #3469d3c2;
+}
+
+.head h1{
+  margin: 0 0 10px 0;
+}
+
+.head .text-container {
+  background: radial-gradient(109.32% 398.31% at -7.72% -35.59%, rgba(25, 58, 90, 0.5) 0%, rgba(19, 39, 62, 0.355) 51.15%, rgba(9, 9, 20, 0.5) 100%);
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 40px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.2);
+}
+
+.head #alexa_with_ballons {
+  width: 600px;
+}
+
+.head .text-container h2 {
+  width: 300px;
+}
+
+.head .text-container p {
+  margin-left: 30px;
+  width: 400px;
+}
+
+.music {
+  height: 900px;
+  background-color: var(--bg-dark);
+  padding-top: 50px;
+  overflow: hidden;
+}
+
+.music .container {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  position: relative;
+}
+
+.music h1 {
+  position: absolute;
+  top: -8px;
+  left: 90px;
+}
+
+.music div {
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.music .img02 {
+  width: 100%;
+  border-radius: 20px;
+  filter: drop-shadow(0px 10px 15px #181E29);
+  box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.2);
+}
+
+.music .balon {
+  width: 300px;
+  position: absolute;
+  top: 60px;
+  left: 350px;
+}
+
+.music .streamings {
+  margin-top: 30px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.experimente {
+  background-color: var(--bg-dark);
+  background-image: url("assets/bg5.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+
+  height: 450px;
+  padding: 100px 50px 100px 50px;
+}
+
+.experimente .container {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(21, 24, 107, 0.5) 0%, #070823 100%);
+  border-radius: 30px 100px;
+  border: 1px solid var(--light-blue);
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.experimente .container:hover {
+  box-shadow: 0px 0px 18px 10px rgba(255, 255, 255, 0.164);
+}
+
+.experimente h2 {
+  margin: 20px;
+}
+
+.experimente h3 {
+  margin: 0 0 20px 0;
+}
+
+.experimente .button {
+  border-radius: 30px 100px;
+  margin-bottom: 20px;
+  max-width: 400px;
+  padding: 40px;
+  height: 70px;
+  font-size: 32px;
+  background: #3469d3c2;
+}
+
+.alexa {
+  height: 950px;
+  background: var(--bg-dark);
+  overflow: hidden;
+}
+
+.alexa .container {
+  display: flex;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+}
+
+.alexa .textarea {
+  width: 50%;
+}
+
+.alexa td {
+  padding: 20px 20px 20px 0;
+}
+
+.alexa button {
+  width: 80%;
+  margin: 30px;
+  font-size: 28px;
+  height: 80px;
+}
+
+.alexa .img03 {
+  border-radius: 30px 0px 0px 30px;
+  background-image: url("assets/img\ 03.png");
+  background-size: cover;
+  height: 782px;
+  width: 50%;
+  box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.2);
+}
+
+.detalhes {
+  background: var(--bg-dark);
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.detalhes h2 {
+  margin: 40px auto 0 auto;
+}
+
+.detalhes .img04 {
+  margin-top: -50px;
+  background-image: url("assets/img\ 04.png");
+  background-size: cover;
+  height: 450px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.detalhes .container {
+  margin-top: -50px;
+  width: 400px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.detalhes .container img {
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+}
+
+.detalhes .button {
+  width: 300px;
+  font-size: 24px;
+  margin: 40px auto 0 auto;
+}
+
+.footer {
+  background: var(--bg-dark);
+  height: 440px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-around;
+  background: rgba(36, 37, 44, 0.52);
+  padding: 20px;
+}
+
+.footer h3 {
+  margin-bottom: 20px;
+}
+
+.footer a {
+  margin: 10px 0;
+}
+
+.footer .second_container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 850px;
+}
+
+.footer #logo {
+  display: flex;
+  margin: 30px auto 20px auto;
+}
+
+.footer .second_container a, .footer .second_container p {
+  font-size: 12px;
+}
