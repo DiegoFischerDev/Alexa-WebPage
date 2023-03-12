@@ -10,6 +10,11 @@
     <title>Amazon - Alexa</title>
   </head>
   <body>
+
+    <!-- <audio controls autoplay>
+      <source src="/assets/sounds/heyAlexa.mp3" type="audio/mpeg">
+    </audio> -->
+
     <section class="menu">
       <img id="logo" src="assets/Brand.png" alt="Logo Amazon" />
 
@@ -30,22 +35,25 @@
           <h1><span>echo</span> dot</h1>
           <h1>Tenha a Alexa em<br />qualquer ambiente.</h1>
 
-          <button href="#" class="button">
+          <button id="conferirOferta" href="#" class="button">
             Conferir Oferta!
           </button>
           <button
-            href="https://www.youtube.com/watch?v=3pD2uWtbQa8"
+            href=""
             class="button-grey"
+            id="playVideo"
           >
             <img src="assets/Play.png" alt="" />
             Play Video
           </button>
         </div>
-        <img
-          id="alexa_with_ballons"
-          src="assets/img 01.png"
-          alt="Alexa image"
-        />
+        <div class="relative">
+          <button id="playMusic" href="#" class="button">Hey Alexa, play my favorite music!</button>
+          <button id="stopMusic" href="#" class="button">Hey Alexa, stop music!</button>
+          <button id="heyAlexa" href="#" class="button">Hey Alexa!</button>
+          <img id="alexaImage" src="" alt="Alexa image"/>
+          <img id="shadown" src="assets/Shadown.png" alt="Alexa image shadown"/>
+        </div>
       </div>
 
       <div class="text-container">
@@ -154,7 +162,7 @@
               </td>
               <td>
                 <img src="assets/icon06.png" alt="icon" />
-                <h3>“Alexa, quais são as notícias?””</h3>
+                <h3>“Alexa, quais são as notícias?”</h3>
                 <p>
                   Matenha-se informado sobre a previsão do tempo ou as notícias
                   com G1, UOL, CBN e outros.

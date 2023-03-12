@@ -150,7 +150,7 @@ section {
   background-attachment: fixed;
 
   height: 900px;
-  padding-top: 10%;
+  padding-top: 8%;
 }
 
 .head .container {
@@ -185,13 +185,70 @@ section {
   justify-content: space-around;
   padding: 20px 40px;
   max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 50px auto;
   box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.2);
 }
 
-.head #alexa_with_ballons {
-  width: 600px;
+.head .container {
+  display: flex;
+  max-width: 1000px;
+  margin: 0px auto;
+  align-items: end;
+}
+
+.relative {
+  position: relative;
+  width: 500px;
+  height: 200px;
+}
+
+.head #alexaImage {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  width: 458px;
+  height: 474px;
+  z-index: 2;
+}
+
+.disableClick {
+  pointer-events: none;
+}
+
+.head #shadown{
+  position: absolute;
+  bottom: -110px;
+  right: -85px;
+  width: 628px;
+  height: 246px;
+  display: none;
+}
+
+.displayShadown {
+  display: initial !important;
+}
+
+.head #playMusic{
+  position: absolute;
+  bottom: 370px;
+  left: -100px;
+  z-index: 3;
+}
+
+.head #stopMusic{
+  position: absolute;
+  bottom: 200px;
+  left: 300px;
+  z-index: 3;
+  width: 350px;
+}
+
+.head #heyAlexa{
+  position: absolute;
+  bottom: 250px;
+  left: -50px;
+  z-index: 3;
+  width: 200px;
 }
 
 .head .text-container h2 {
