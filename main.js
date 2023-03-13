@@ -42,6 +42,7 @@ StopMusicAudio.src = "./assets/sounds/StopMusic.ogg";
 Music.src = "./assets/sounds/music.mp3";
 
 AlexaImage.setAttribute('src', 'assets/objectOff.png');
+AlexaImageShadown.setAttribute('src', 'assets/PNGvazio.png');
 
 function DisableButtons() {
   HeyAlexaButton.classList.add('disableClick');
@@ -57,13 +58,13 @@ function AnableButtons() {
 
 function ActivateAlexa() {
   AlexaImage.setAttribute('src', 'assets/objectOn.png');
-  AlexaImageShadown.classList.add('displayShadown');
+  AlexaImageShadown.setAttribute('src', 'assets/Shadown.png');
   DisableButtons();
 }
 
 function DeactivateAlexa() {
   AlexaImage.setAttribute('src', 'assets/objectOff.png');
-  AlexaImageShadown.classList.remove('displayShadown');
+  AlexaImageShadown.setAttribute('src', 'assets/PNGvazio.png');
   AnableButtons(); 
 }
 
@@ -87,7 +88,7 @@ function PlayMusic(){
   setTimeout(()=>{
     AlertSound.play();
     AlexaImage.setAttribute('src', 'assets/objectOn.png');
-    AlexaImageShadown.classList.add('displayShadown');
+    AlexaImageShadown.setAttribute('src', 'assets/Shadown.png');
   }, 2500);
 
   setTimeout(()=>{PlayMusicAudio.play()}, 4500);
